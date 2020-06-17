@@ -1,18 +1,24 @@
 radio.onReceivedNumber(function (receivedNumber) {
     if (1 < 2) {
         basic.showIcon(IconNames.Heart)
-    } else {
+    } else if (false) {
         basic.showIcon(IconNames.No)
+    } else {
+        basic.showIcon(IconNames.Triangle)
     }
     if (2 < 3) {
         basic.showIcon(IconNames.Heart)
-    } else {
+    } else if (false) {
         basic.showIcon(IconNames.No)
+    } else {
+        basic.showIcon(IconNames.Triangle)
     }
     if (3 < 1) {
         basic.showIcon(IconNames.Heart)
-    } else {
+    } else if (false) {
         basic.showIcon(IconNames.No)
+    } else {
+        basic.showIcon(IconNames.Triangle)
     }
 })
 input.onButtonPressed(Button.A, function () {
