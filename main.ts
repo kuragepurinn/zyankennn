@@ -1,29 +1,34 @@
 radio.onReceivedNumber(function (receivedNumber) {
-    if (1 < 2) {
-        basic.showIcon(IconNames.Heart)
-    } else if (false) {
-        basic.showIcon(IconNames.No)
-    } else {
+    let 相手の手２ = 0
+    let 相手の手１ = 0
+    let 自分の手 = false
+    if (自分の手 == (相手の手１ == 相手の手２)) {
         basic.showIcon(IconNames.Triangle)
-    }
-    if (2 < 3) {
-        basic.showIcon(IconNames.Heart)
-    } else if (false) {
-        basic.showIcon(IconNames.No)
-    } else {
+    } else if (自分の手 == (相手の手１ == 相手の手２)) {
         basic.showIcon(IconNames.Triangle)
-    }
-    if (3 < 1) {
-        basic.showIcon(IconNames.Heart)
-    } else if (false) {
-        basic.showIcon(IconNames.No)
-    } else {
+    } else if (自分の手 == (相手の手１ == 相手の手２)) {
         basic.showIcon(IconNames.Triangle)
+    } else if (自分の手 == (相手の手１ == 相手の手２)) {
+        basic.showIcon(IconNames.Triangle)
+    } else if (自分の手 < (相手の手１ == 相手の手２)) {
+        basic.showIcon(IconNames.No)
+    } else if (自分の手 < (相手の手１ == 相手の手２)) {
+        basic.showIcon(IconNames.No)
+    } else if (自分の手 < (相手の手１ == 相手の手２)) {
+        basic.showIcon(IconNames.No)
+    } else if (自分の手 > (相手の手１ == 相手の手２)) {
+        basic.showIcon(IconNames.Heart)
+    } else if (自分の手 > (相手の手１ == 相手の手２)) {
+        basic.showIcon(IconNames.Heart)
+    } else if (自分の手 > (相手の手１ == 相手の手２)) {
+        basic.showIcon(IconNames.Heart)
+    } else {
+    	
     }
 })
 input.onButtonPressed(Button.A, function () {
     basic.showIcon(IconNames.Scissors)
-    radio.sendNumber(1)
+    radio.sendNumber(2)
 })
 input.onButtonPressed(Button.AB, function () {
     basic.showIcon(IconNames.Square)
@@ -37,7 +42,7 @@ input.onButtonPressed(Button.B, function () {
         . # # # .
         . . . . .
         `)
-    radio.sendNumber(2)
+    radio.sendNumber(1)
 })
 basic.showIcon(IconNames.Yes)
 radio.setGroup(8)
